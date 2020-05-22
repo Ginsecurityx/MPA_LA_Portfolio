@@ -20,15 +20,20 @@
 
 /* normal CSS */
 .image_outer{
+    height: auto;
     border: 2px solid var(--color-one);
     grid-area: image;
     overflow: hidden;
     margin-left: 1rem;
     margin-right: 1rem;
+    object-fit: cover;
 }
 
 .image_outer img{
-    transform: scale(1.1);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    transform: scale(1);
     transition: 400ms ease-out;
 }
 
