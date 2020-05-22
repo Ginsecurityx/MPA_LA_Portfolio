@@ -1,6 +1,7 @@
 @import url("text.css");
 @import url("header.css");
 @import url("container.css");
+@import url("assistant.css");
 
 body{
     width: 100%;

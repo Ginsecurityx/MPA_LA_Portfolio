@@ -1,0 +1,42 @@
+.assistant_inner{
+    position: fixed;
+    right: 1rem;
+    padding: 2rem;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    background: var(--color-one);
+    box-shadow: 0 0 5px;
+    z-index: 99;
+}
+
+#assist{
+    bottom: 1.3rem;
+}
+
+/* inactive Status: */
+#assist-contact{
+    bottom: 6.5rem;
+    visibility: hidden;
+    transform: translateY(5.3rem);
+    z-index: 98;
+    transition: 100ms ease-out;
+}
+
+#assist-info{
+    bottom: 11.8rem;
+    visibility: hidden;
+    transform: translateY(10.5rem);
+    z-index: 98;
+    transition: 100ms ease-out;
+}
+
+/* active Status */
+#assist-contact.active{
+    visibility: initial;
+    transform: translateY(0);
+}
+
+#assist-info.active{
+    visibility: initial;
+    transform: translateY(0);
+}
