@@ -1,42 +1,39 @@
 .header_outer{
     max-width: 100%;
+    margin: 0;
     padding: .5rem 0 .5rem 0;
     background: #b3b3ff;
     position: sticky;
     top: 0;
     left: 0;
+    box-shadow: 0 0 15px;
     z-index: 99;
 }
 
+.navigation_inner ul{
+    margin-left: 0;
+}
 
-/*normal State*/
-@media only screen and (min-width: 700px){
+.navigation_inner{
+    margin-left: 3.8rem;
+}
 
-    .navigation_inner{
-        margin-left: 3.8rem;
-    }
+.navigation_inner ul li{
+    color: white;
+    list-style: none;
+    text-emphasis: none;
+    text-decoration: none;
+    display: inline;
+    margin-right: 1.2rem;
+}
 
-    .navigation_inner ul{
-        margin-left: 0;
-    }
-
-    .navigation_inner ul li{
-        color: white;
-        list-style: none;
-        text-emphasis: none;
-        text-decoration: none;
-        display: inline;
-        margin-right: 1.2rem;
-    }
-
-    .navigation_inner ul li a{
-        color: white;
-        list-style: none;
-        text-emphasis: none;
-        text-decoration: none;
-        display: inline;
-        transition: 300ms all;
-    }
+.navigation_inner ul li a{
+    color: white;
+    list-style: none;
+    text-emphasis: none;
+    text-decoration: none;
+    display: inline;
+    transition: 300ms all;
 }
 
 .navigation_inner ul li a:hover{
@@ -44,20 +41,25 @@
     cursor: pointer;
 }
 
-/*Mobile*/
-
 @media only screen and (max-width: 700px){
-    .navigation_inner ul li{
-        color: white;
-        list-style: none;
-        margin-right: 1.2rem;
+    .navigation_inner{
+        margin-left: 0;
+        text-align: center;
     }
-   
+
     .navigation_inner ul li a{
-        color: white;
-        list-style: none;
-        text-emphasis: none;
-        text-decoration: none;
-        transition: 300ms all;
+        font-size: 1.2rem;
+    }
+
+    #home{
+        float: left;
+    }
+
+    #about, #work{
+        float: right;
+    }
+
+    .header_outer{
+        padding-bottom: 2.8rem;
     }
 }
