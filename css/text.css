@@ -1,0 +1,10 @@
+body{
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+.headline{
+    font-size: var(--headline-one);
+    text-align: center;
+    color: var(--color-one);
+}

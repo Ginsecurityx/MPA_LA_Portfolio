@@ -1,0 +1,38 @@
+/* define Grid */
+.uebersicht_inner{
+    display: grid;
+    grid-template-areas: "image-one image-two image-three";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+#img_one{
+    grid-area: image-one;
+}
+#img_two{
+    grid-area: image-two;
+}
+#img_three{
+    grid-area: image-three;
+}
+
+/* normal CSS */
+.image_outer{
+    border: 2px solid var(--color-one);
+    grid-area: image;
+    overflow: hidden;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.image_outer img{
+    transform: scale(1.1);
+    transition: 400ms ease-out;
+}
+
+.image_outer img:hover{
+    transform: scale(1.3);
+    z-index: 0;
+}

@@ -1,0 +1,40 @@
+.header_outer{
+    max-width: 100%;
+    padding: .5rem 0 .5rem 0;
+    background: #b3b3ff;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.navigation_inner{
+    margin-left: 3.8rem;
+}
+
+.navigation_inner ul{
+    margin-left: 0;
+}
+
+.navigation_inner ul li{
+    color: white;
+    list-style: none;
+    text-emphasis: none;
+    text-decoration: none;
+    display: inline;
+    margin-right: 1.2rem;
+}
+
+.navigation_inner ul li a{
+    color: white;
+    list-style: none;
+    text-emphasis: none;
+    text-decoration: none;
+    display: inline;
+    transition: 300ms all;
+}
+
+.navigation_inner ul li a:hover{
+    color: #404040;
+    cursor: pointer;
+}

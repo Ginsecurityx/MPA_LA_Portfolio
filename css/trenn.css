@@ -1,0 +1,17 @@
+.trenn_outer, #trenn{
+    background: var(--color-one);
+    padding-top: 0.05rem;
+    padding-bottom: 0.05rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.trenn_inner h1{
+    text-align: center;
+    color: var(--text-color);
+}
+
+#trenn.sticky{
+    position: sticky;
+    top: 1rem;
+}
