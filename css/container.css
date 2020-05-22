@@ -1,21 +1,31 @@
 /* define Grid */
-.uebersicht_inner{
-    display: grid;
-    grid-template-areas: "image-one image-two image-three";
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    margin-left: 5rem;
-    margin-right: 5rem;
+
+@media only screen and (min-width: 700px){
+
+    .uebersicht_inner{
+        display: grid;
+        grid-template-areas: "image-one image-two image-three";
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+
+    #img_one{
+        grid-area: image-one;
+    }
+    #img_two{
+        grid-area: image-two;
+    }
+    #img_three{
+        grid-area: image-three;
+    }
 }
 
-#img_one{
-    grid-area: image-one;
-}
-#img_two{
-    grid-area: image-two;
-}
-#img_three{
-    grid-area: image-three;
+@media only screen and (max-width: 700px){
+    .image_outer{
+        margin: 2rem;
+    }
 }
 
 /* normal CSS */

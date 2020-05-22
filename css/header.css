@@ -8,33 +8,56 @@
     z-index: 99;
 }
 
-.navigation_inner{
-    margin-left: 3.8rem;
-}
 
-.navigation_inner ul{
-    margin-left: 0;
-}
+/*normal State*/
+@media only screen and (min-width: 700px){
 
-.navigation_inner ul li{
-    color: white;
-    list-style: none;
-    text-emphasis: none;
-    text-decoration: none;
-    display: inline;
-    margin-right: 1.2rem;
-}
+    .navigation_inner{
+        margin-left: 3.8rem;
+    }
 
-.navigation_inner ul li a{
-    color: white;
-    list-style: none;
-    text-emphasis: none;
-    text-decoration: none;
-    display: inline;
-    transition: 300ms all;
+    .navigation_inner ul{
+        margin-left: 0;
+    }
+
+    .navigation_inner ul li{
+        color: white;
+        list-style: none;
+        text-emphasis: none;
+        text-decoration: none;
+        display: inline;
+        margin-right: 1.2rem;
+    }
+
+    .navigation_inner ul li a{
+        color: white;
+        list-style: none;
+        text-emphasis: none;
+        text-decoration: none;
+        display: inline;
+        transition: 300ms all;
+    }
 }
 
 .navigation_inner ul li a:hover{
     color: #404040;
     cursor: pointer;
+}
+
+/*Mobile*/
+
+@media only screen and (max-width: 700px){
+    .navigation_inner ul li{
+        color: white;
+        list-style: none;
+        margin-right: 1.2rem;
+    }
+   
+    .navigation_inner ul li a{
+        color: white;
+        list-style: none;
+        text-emphasis: none;
+        text-decoration: none;
+        transition: 300ms all;
+    }
 }
