@@ -34,9 +34,23 @@
 #assist-contact.active{
     visibility: initial;
     transform: translateY(0);
+    animation: bounce 100ms 100ms;
 }
 
 #assist-info.active{
     visibility: initial;
     transform: translateY(0);
+    animation: bounce 100ms 100ms;
+}
+
+@keyframes bounce{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-20px);
+    }
+    100%{
+        transform: translateY(0);
+    }
 }
