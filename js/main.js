@@ -1,18 +1,6 @@
 $(document).ready(function(){
 
-    // $(window).on('load', function(){
-    //     let colors = ['#b3b3ff', '#ffb3ff', '#b3e9ff'];
-    //     // var body = $(body);
-
-    //     // for(var i=0; i<colors.length; i++){
-    //     //     Math.floor(Math.random()*colors.length);
-    //     // }
-
-    //     let colorOne = colors[0];
-
-    // });
-
-
+    //Assist
     var contact  = $('#assist-contact');
     var info  = $('#assist-info');
 
@@ -26,8 +14,16 @@ $(document).ready(function(){
         }
     });
 
+    $(contact).on('click', function(){
+        $('.contact').toggleClass('active', true);
+    });
+
     $(window).on('scroll', function(){
-        contact.toggleClass('active', false);
-        info.toggleClass('active', false);
+        setTimeout(function(){
+            contact.toggleClass('active', false);
+            info.toggleClass('active', false);
+        }, 300);
+        
+        $('.contact').toggleClass('active', false);
     });
 });

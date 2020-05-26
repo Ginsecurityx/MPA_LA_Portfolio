@@ -37,8 +37,8 @@
 }
 
 .navigation_inner ul li a:hover{
-    color: #404040;
     cursor: pointer;
+    color: #202020;
 }
 
 @media only screen and (max-width: 700px){

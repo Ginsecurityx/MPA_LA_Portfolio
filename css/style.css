@@ -22,3 +22,8 @@ body{
     margin-top: 30rem;
 }
 
+ul, li, a{
+    list-style-type: none;
+    text-emphasis: none;
+    text-decoration: none;
+}
