@@ -51,14 +51,20 @@
     position: fixed;
     bottom: 2rem;
     right: 6.5rem;
-    padding: 5rem;
+    padding: 1rem;
     background: var(--color-one);
-    box-shadow: 0 0 5px;
+    color: var(--text-color);
+    box-shadow: black 0 0 5px;
     visibility: hidden;
     opacity: 0;
     transform: translateX(50px);
     transition: 200ms ease-out;
     z-index: 97;
+}
+
+.contact ul{
+    text-align: left;
+    padding: .5rem 3rem .5rem 0;
 }
 
 .contact.active{
