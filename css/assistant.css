@@ -1,6 +1,6 @@
 .assistant_inner{
     position: fixed;
-    right: 1rem;
+    right: .5rem;
     padding: 2rem;
     border: 1px solid transparent;
     border-radius: 50%;
@@ -10,6 +10,7 @@
 
 .assistant_inner:hover{
     cursor: pointer;
+    box-shadow: 0 0 5px;
 }
 
 .icon svg{
@@ -37,8 +38,8 @@
     z-index: 99;
 }
 
-.icon svg:hover{
-    filter: invert(20%);
+.:hover{
+
 }
 
 #assist{
