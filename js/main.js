@@ -16,14 +16,21 @@ $(document).ready(function(){
 
     $(contact).on('click', function(){
         $('.contact').toggleClass('active', true);
+        $('.info').toggleClass('active', false);
     });
+
+    $(info).on('click', function(){
+        $('.info').toggleClass('active', true);
+        $('.contact').toggleClass('active', false);
+    });
+
 
     $(window).on('scroll', function(){
         setTimeout(function(){
             contact.toggleClass('active', false);
             info.toggleClass('active', false);
         }, 300);
-        
         $('.contact').toggleClass('active', false);
+        $('.info').toggleClass('active', false);
     });
 });
